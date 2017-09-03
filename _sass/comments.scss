@@ -20,8 +20,7 @@ $breakpoints: (
 }
 
 input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], .text-field {
-	display: block;
-	width: 100%;
+	width: 95%;
 	font-size: 20px;
 	border: 2px solid #000;
 	padding: 10px;
@@ -35,9 +34,15 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 	}
 }
 
+input[type="checkbox"] {
+}
+
+input[type="submit"] {
+}
+
 .comments {
 	margin-top: $post-vertical-rythm * 3;
-	padding: ($post-vertical-rythm * 2) 0;
+	padding: 50px 10px 10px 10px;
 	background-color: $colour-light-grey;
 	overflow-wrap: break-word;
 	word-wrap: break-word;

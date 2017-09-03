@@ -32,8 +32,10 @@
 			<input class="form__field text-field" type="email" name="fields[email]" placeholder="E-Mail Adresse (wird nicht veröffentlicht)" required/>
 			<input class="form__field text-field" type="address" name="fields[address]" placeholder="Address (do not fill!)" style="display: none"/>  
 			<textarea class="form__field text-field" rows="10" name="fields[message]" placeholder="Kommentar. Markdown wird akzeptiert." required></textarea>  
-			<input id="form-subscribe" type="checkbox" name="options[subscribe]" value="email" class="checkbox"><label for="form-subscribe" class="form__field checkbox__label">Ich möchte über weitere Kommentare benachrichtigt werden</label>  
-			<input class="cta" type="submit" value="Send" />  
+			<input id="form-subscribe" type="checkbox" name="options[subscribe]" value="email" class="checkbox">
+			<label for="form-subscribe" class="form__field checkbox__label">Ich möchte über weitere Kommentare benachrichtigt werden</label>  
+			<input class="cta" type="submit" value="Senden*" />  
+			<label for="form-subscribe" class="form__field button__label">(*) Das Kommentar wird über das Git-Push hinzugefügt und benötigt daher paar Momente bis es auf der Seite erscheint.</label>
 		</form>
 	</div>
 </section>
