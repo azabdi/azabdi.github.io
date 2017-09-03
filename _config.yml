@@ -1,28 +1,39 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: Example Jekyll site using GitLab Pages
-email: azabdi@z.de
-blogger_name: azabdi
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Azmir Abdi's Blog
+description: 'Das private Blog vom Azmir Abdi'
+url: 'http://azabdi.github.io'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+
+author:
+  name: 'Azmir Abdi'
+  email: azabdi@gmx.de
+  xing_username: 'Azmir_Abdi'
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
 # Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
 markdown: kramdown
-exclude: ["README.md"]
-
 highlighter: rouge
 
-# encoding: bom|utf-8
-encoding: utf-8
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
