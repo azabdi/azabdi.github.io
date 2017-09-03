@@ -1,6 +1,6 @@
 # Site settings
 title: Azmir Abdi's Blog
-description: 'Das private Blog vom Azmir Abdi'
+description: 'Das private Wirtschaftsinformatik Blog vom Azmir Abdi'
 url: 'http://azabdi.github.io'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
@@ -37,3 +37,6 @@ kramdown:
 
 gems: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
+# Staticman
+staticmanUrl: https://api.staticman.net/v2/entry/azabdi/azabdi.github.io/master/comments
