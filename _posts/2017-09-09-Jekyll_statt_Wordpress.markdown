@@ -6,12 +6,10 @@ categories: [Blog]
 tags: [Blog, Wordpress, Jekyll, Staticman]
 ---
 
-`Am Anfang war die Idee … und weil die Idee so innovativ war fand sie im cyber space ihre Schöpfung.`
+`Am Anfang war die Idee … und weil die Idee so "innovativ" war fand sie im cyber space ihre Schöpfung.`
 
 * Braucht Internet noch ein Blog? 
-    * Hm. 
 * Braucht Internet mein Blog? 
-    * Hm?!  
 
 Wie dem auch sei, jetzt sitze ich hier und tippe wie es dazu kam ...   
 
