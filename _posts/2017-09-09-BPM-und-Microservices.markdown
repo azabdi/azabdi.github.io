@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "BPM und Microservices"
-date:   2017-09-05 10:04:23
+date:   2017-09-09 18:57:07
 categories: [BPM]
 tags: [BPM, Microservices, Enterprise Architecture]
 ---
@@ -20,7 +20,6 @@ Matt McLarty hat in seinem [Artikel][mattmclarty] die Abgrenzung der Microservic
 Einer der Widersprüche von SOA und BPM zu den Microservices-Ansatz liegt genau beim ESB. Microservices-Ansatz setzt auf leichtgewichtige Integration.
 *`smart endpoints and dumb pipes` Prinzip wird als Folge der Anwendung vom [Coway’s Gesetz][conway] vorgeschrieben. 
 Nach Conway werden die IT-Systeme unweigerlich nach den Kommunikationsstrukturen des Unternehmens organisiert. Wie oft kommt es vor das ein Unternehmen eine Organisationseinheit hat die in der IT vom ESB abgebildet werden kann. Ein Team mit Aktentransportwägen ausgestattet mit einem mobilen Arbeitsplätzen (Laptop + Drucker) wobei die Akten im Zielformat unterwegs für die nächste Abteilung übersetzt werden.  
-
 
 … tbd …
 

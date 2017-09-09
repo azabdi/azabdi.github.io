@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jekyll statt Wordpress"
-date:   2017-08-31 14:45:12
+date:   2017-09-09 14:45:12
 categories: [Blog]
 tags: [Blog, Wordpress, Jekyll, Staticman]
 ---
