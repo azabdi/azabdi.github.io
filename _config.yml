@@ -3,7 +3,7 @@ title: Azmir Abdi's Blog
 description: 'Das private Wirtschaftsinformatik Blog vom Azmir Abdi'
 url: 'http://azabdi.github.io'
 baseurl: ''
-# google_analytics: 'UA-XXXXXX-X'
+google_analytics: 'UA-106160995-1'
 
 author:
   name: 'Azmir Abdi'

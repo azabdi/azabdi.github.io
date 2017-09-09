@@ -43,18 +43,4 @@ beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten
 Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
 Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
 
-## XING
-Unsere Webseite nutzt Funktionen des Netzwerks XING. Anbieter ist die XING AG, Dammtorstraße 29-
-32, 20354 Hamburg, Deutschland. Bei jedem Abruf einer unserer Seiten, die Funktionen von XING
-enthält, wird eine Verbindung zu Servern von XING hergestellt. Eine Speicherung von
-personenbezogenen Daten erfolgt dabei nach unserer Kenntnis nicht. Insbesondere werden keine IPAdressen
-gespeichert oder das Nutzungsverhalten ausgewertet.
-Weitere Information zum Datenschutz und dem XING Share-Button finden Sie in der
-Datenschutzerklärung von XING unter: https://www.xing.com/app/share?op=data_protection
-
-## Blog Kommentare
-Für die Kommentarfunktion auf dieser Seite werden neben Ihrem Kommentar auch Angaben zum
-Zeitpunkt der Erstellung des Kommentars und, wenn Sie nicht anonym posten, der von Ihnen gewählte Nutzername gespeichert.  
-Ihre E-Mail-Adresse wird nur verschlüselt für die Rückmeldungen intern gespeichert und nicht veröffentlicht.
-
 `Quelle: e-recht24.de`
