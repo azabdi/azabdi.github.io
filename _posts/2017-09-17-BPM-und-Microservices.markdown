@@ -4,6 +4,7 @@ title:  "BPM und Microservices"
 date:   2017-09-17 18:57:07
 categories: [BPM]
 tags: [BPM, Microservices, Enterprise Architecture]
+published: false
 ---
 Steht klassisches Business Process Management (BPM) im Wiederspruch zu der IT-Architektur nach dem Microservices-Ansatz? Der korrekte Microservices-Ansatz erlaubt keine zentrale unternehmensweite Prozesssteuerungskomponente!  
 

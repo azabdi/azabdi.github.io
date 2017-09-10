@@ -40,3 +40,5 @@ exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 
 # Staticman
 staticmanUrl: https://api.staticman.net/v2/entry/azabdi/azabdi.github.io/master/comments
+
+future: false
