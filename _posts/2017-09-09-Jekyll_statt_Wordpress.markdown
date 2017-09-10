@@ -61,7 +61,8 @@ Nachdem die Kommentarfunktion eingebetet war ist der Rest schnell erledigt. Mir 
 
 Vielen Dank für deine Zeit und viele Grüße,  
 [Azmir Abdi][about]
----
+
+
 [smashingmagazine]:   https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 [discus]:             https://disqus.com
 [staticman]:          https://staticman.net/
