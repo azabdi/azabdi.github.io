@@ -34,7 +34,7 @@ Also los geht es.
 
 Online gibt es etliche Artikel, die Argumente pro [Jekyll][jekyll] bringen. Zum Beispiel vom [smashingmagazine].  
 
-## [`Discus`][discus] vs. [Staticman][staticman]
+## [Discus][discus] vs. [Staticman][staticman]
 Doch wie sieht es mit den Kommentaren aus? Sind Kommentare nicht DER Grund, einen Blog aufzusetzen – um die Rückmeldungen auf eigene Gedanken von der Community zu erhalten?! `Web 2.0`.  
 Aber nur wegen der Kommentarfunktion doch [Wordpress][wordpress], das dynamische Inhalte ermöglicht, zu betreiben ...?  
 
