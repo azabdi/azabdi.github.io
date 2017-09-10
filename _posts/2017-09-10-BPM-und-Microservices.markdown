@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "BPM und Microservices"
-date:   2017-09-09 18:57:07
+date:   2017-09-10 18:57:07
 categories: [BPM]
 tags: [BPM, Microservices, Enterprise Architecture]
 ---
