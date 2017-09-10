@@ -5,11 +5,11 @@ robots: noindex
 
 ## About me
 
-Als IT Softwarearchitekt und Wirtschaftsinformatiker bei [sidion] versuche ich stets die Business-Anforderungen Prozess-orientiert umzusetzen. Die IT bringt das Unternehmen am schnellsten voran wenn diese auch an die Geschäftsziele orientiert ist. Durch BPM lassen sich die Geschäftsziele optimal strukturieren und für dessen Erreichung in die Prozesse gießen.  
+Als IT Softwarearchitekt und Wirtschaftsinformatiker bei [sidion] versuche ich stets, Businessanforderungen prozessorientiert umzusetzen. Die IT bringt das Unternehmen am schnellsten voran, wenn diese sich an den Geschäftsziele orientiert. Durch BPM lassen sich nicht nur die Geschäftsziele optimal organisieren, auch die Unternehmensstruktur wird, zur Erreichung dieser Ziele, in Prozesse gegossen.  
 
-Die Herausforderung diese unternehmensweite Sicht trotz IT-Komplexität nicht aus den Augen zu verlieren ist treibt mich an. Seit mehreren Jahren bewege ich mich in den IT Projekten. Oft habe ich erlebt dass sich das Business durch IT als nicht verstanden füllt. Mit BPMN ist eine gemeinsame Sprache enstanden die die Komunikation zwischen Business und IT erleichtert. Doch das BPM Ansatz ist zentral und damit monolithisch. Der optimierte Microservices-Ansatz sieht so eine zentrale Prozesssteuerungsinstanz nicht vor. Im Gegenteil, es wird dagegen gewarnt. Zurecht.  
-Mein aktuelles Anliegen ist es bei der IT das Bewusstsein für die Geschäftsprozesse auch in der Microservices Architektur beizubehalten. Für dieses Thema freue ich mich gerne auf jede Möglichkeit darüber zu werben und zu diskutieren.  
+Die Herausforderung, diese unternehmensweite Sicht trotz IT-Komplexität nicht aus den Augen zu verlieren, treibt mich an. Seit mehreren Jahren bewege ich mich in unterschiedlichen IT Projekten. Oft habe ich erlebt, dass sich die Business durch die IT nicht verstanden fühlt. Mit BPMN ist eine gemeinsame Sprache enstanden, die die Komunikation zwischen Business und IT erleichtert. Doch der BPM Ansatz ist zentral und damit monolithisch. Der optimierte Microservices-Ansatz sieht eine so zentralisierte Prozesssteuerungsinstanz nicht vor. Im Gegenteil, es wird davor gewarnt. Zurecht.  
+Mein aktuelles Anliegen ist es, bei der IT das Bewusstsein für die Geschäftsprozesse auch in der Microservices Architektur beizubehalten und ich nutze gerne die Möglichkeit, Aufmerksamkeit für dieses Thema zu generieren und darüber zu diskutieren.  
 
-Für mehr siehe mein Xing Profil:  <a href="https://www.xing.com/profile/{{ site.author.xing_username }}" title="{{ site.author.xing_username }} on Xing" target="_blank"><i class="fa fa-xing-square fa-2x"></i></a>
+Mehr Informationen gibt's auf meinem Xing Profil:  <a href="https://www.xing.com/profile/{{ site.author.xing_username }}" title="{{ site.author.xing_username }} on Xing" target="_blank"><i class="fa fa-xing-square fa-2x"></i></a>
 
 [sidion]:      http://www.sidion.de
