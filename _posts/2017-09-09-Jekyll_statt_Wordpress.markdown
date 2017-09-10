@@ -15,7 +15,7 @@ Wie dem auch sei, jetzt sitze ich hier und tippe wie es dazu kam ...
 
 Da mich paar Gedanken verfolgten und ich diese online nicht vorfinden konnte kam ich auch dazu eigenes Blog zu eröffnen. Die Zeit, auf der ich sehr gespannt bin, wird den "Schaden" offenbaren.
 
-Also log geht es.   
+Also los geht es.   
 
 ## Themen 
 ... waren durch die o.g. Gedanken gesetzt:
@@ -38,14 +38,14 @@ Online sind etliche Artikel die Argumente pro [Jekyll][jekyll] bringen. Zum Beis
 Doch wie sieht es mit den Kommentaren aus. Sind Kommentare nicht DER Grund ein Blog aufzusetzen – um die Rückmeldungen auf eigenen Gedanken von der gequellten community zu erhalten?! `Web 2.0`.  
 Aber nur wegen der Kommentarfunktion doch [Wordpress][wordpress], das dynamische Inhalte ermöglicht, zu betreiben?  
 
-Also die nächste Recherche: `Kommentare für [Jekyll][jekyll] Seiten`.  
+Die nächste Recherche folgte: `Kommentare für Jekyll Seiten`.  
 Treffer:
 * [`Discus`][discus]
    * Speichert über eigenes SAAS in USA die Kommentare im Übersee je Seite (URL) und lädt diese innerhalb eines eigebetteten Div‘s. 
 * [`Staticman`][staticman]
    * Betreibt ein Git Push Dienst bei dem jeder Kommentar als neue Datei auf das entsprechende Pfade im Seiten-Quellcode auf GitHub Repository der Seite gespeichert wird. GitHub merkt Änderung und startet neues Deployment. Quasi vom Hinten durch die Brust.
 
-Also doch [staticman] weil es sehr `cool` ist. IT’ler mögen komplexe Abläufe! Und, alle Kommentare liegen dann in Sourcecode was im Vergleich zum [discus] tatsächlich um vielfaches besser ist.  
+Ich beforzugte [staticman] weil es `cool` ist. IT’ler mögen komplexe Abläufe! Und, alle Kommentare liegen dann in Sourcecode was im Vergleich zum [discus] tatsächlich um vielfaches besser ist.  
 
 ## [GitLab Pages][gitlabpages] vs. [GitHub Pages][githubpages]
 Interessant das im [GitLab Pages][gitlabpages] vs. [GitHub Pages][githubpages] eigentlich GitLab weitaus mehr Funtkionen und eine moderne CI-Pipeline anbietet, aber dafür im Zusammenspiel mit staticman nicht in Frage kommt da neues Deployment aufgrund des gesamten Docker-Kontainers mehrere Minuten benötigt.  
@@ -59,11 +59,9 @@ Probiere es mal aus, und hinterlasse einen Kommentar.
 ## Fazit
 Nachdem die Kommentarfunktion eingebetet war ist der Rest schnell erledigt. Mir hat das aufsetzten Spass bereitet und der Gedanke wie einfach ein neuer Blog-Post nachdem der Blog steht hizugefügt werden kann, bereitet mir umso mehr Freude. Ich hoffe das auch für Dich was Lesenswertes dabei zu finden sein wird.
 
-
 Vielen Dank für deine Zeit und viele Grüße,  
 [Azmir Abdi][about]
-
-
+---
 [smashingmagazine]:   https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
 [discus]:             https://disqus.com
 [staticman]:          https://staticman.net/
