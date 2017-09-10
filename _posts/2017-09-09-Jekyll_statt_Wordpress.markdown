@@ -34,7 +34,7 @@ Also los geht es.
 
 Online gibt es etliche Artikel, die Argumente pro [Jekyll][jekyll] bringen. Zum Beispiel vom [smashingmagazine].  
 
-## Discus vs. Staticman
+## [`Discus`][discus] vs. [Staticman][staticman]
 Doch wie sieht es mit den Kommentaren aus? Sind Kommentare nicht DER Grund, einen Blog aufzusetzen – um die Rückmeldungen auf eigene Gedanken von der Community zu erhalten?! `Web 2.0`.  
 Aber nur wegen der Kommentarfunktion doch [Wordpress][wordpress], das dynamische Inhalte ermöglicht, zu betreiben ...?  
 
@@ -48,11 +48,11 @@ Treffer:
 Ich bevorzuge [staticman] weil es `cool` ist. ITler mögen komplexe Abläufe! Außerdem liegen alle Kommentare dann in Sourcecode, was im Vergleich zum [discus] tatsächlich um ein Vielfaches besser ist.  
 
 ## [GitLab Pages][gitlabpages] vs. [GitHub Pages][githubpages]
-Interessant ist, dass im [GitLab Pages][gitlabpages] vs. [GitHub Pages][githubpages] eigentlich GitLab weitaus mehr Funtkionen und eine moderne CI-Pipeline anbietet, aber dafür im Zusammenspiel mit staticman nicht in Frage kommt, da ein neues Deployment aufgrund des gesamten Docker-Containers mehrere Minuten benötigt.  
+Interessant ist, dass im [GitLab Pages][gitlabpages] vs. [GitHub Pages][githubpages] eigentlich GitLab weitaus mehr Funtkionen und eine moderne CI-Pipeline anbietet, aber dafür im Zusammenspiel mit [staticman] nicht in Frage kommt, da ein neues Deployment aufgrund des gesamten Docker-Containers mehrere Minuten benötigt.  
 Beim [GitHub Pages][githubpages] sind es nur wenige Sekunden.  
 
 Probiere es mal aus, und hinterlasse einen Kommentar. 
-1. Im Hintergrund wird staticman public Service mit dem HTTP POST Formular aufgerufen, das wiederum per `git push` für deinen Kommentar eine neue Datei ablegt. Siehe [GitHub Comments Repository][githubcomments].
+1. Im Hintergrund wird [staticman] public Service mit dem HTTP POST Formular aufgerufen, das wiederum per `git push` für deinen Kommentar eine neue Datei ablegt. Siehe [GitHub Comments Repository][githubcomments].
 2. GitHub startet ein neues Deployment und ... 
 3. ... wenn du die Seite neu lädst, sollte dein Kommentar erscheinen. 
 
