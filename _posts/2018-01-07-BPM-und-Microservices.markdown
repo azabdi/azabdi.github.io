@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "BPM und Microservices"
-date:   2017-09-17 18:57:07
+date:   2018-01-07 10:57:08
 categories: [BPM]
 tags: [BPM, Microservices, Enterprise Architecture, SOA, Reverse BPM, BPM Reverse Engineering]
 published: false
@@ -9,19 +9,19 @@ published: false
 Steht klassisches Business Process Management (BPM) im Wiederspruch zu der IT-Architektur nach dem Microservices-Ansatz? Der korrekte Microservices-Ansatz erlaubt keine zentrale unternehmensweite Prozesssteuerungskomponente!  
 
 ## BPM und SOA
-Business Process Management (BPM) ist ein vollumfänglicher Ansatz der Unternehmensorganisation konzentriert auf die kontinuierliche Optimierung und damit auf die Gewinnmaximierung des Kerngeschäfts. Dabei wird das Kerngeschäft in die End-To-End Geschäftsprozess(e) gegliedert die komplette Eigenleistung von dem Kunden-Auftrag bis zu der abschließenden Kunden-Lieferung umfasst.  
+Business Process Management (BPM) ist ein vollumfänglicher Ansatz der Unternehmensorganisation konzentriert auf die kontinuierliche Optimierung und damit auf die Gewinnmaximierung des Kerngeschäfts. Dabei wird das Kerngeschäft in die End-To-End Geschäftsprozess(e) gegliedert, die komplette Eigenleistung von dem Kunden-Auftrag bis zu der abschließenden Kunden-Lieferung umfassen.  
 
 Die IT gestützte Lösung des BPM’s sind die BPM-Systeme (BPMS) bei denen die End-To-End Geschäftsprozesse durch integrierte zentrale Business Process Engines (BPE) automatisiert gesteuert werden.  
 
-BPM Ansatz spielt hervorragend mit der Serviceorientierten Architektur (SOA) als Enterprise-SOA zusammen wie im Artikel der computerwoche vor über 10 Jahren beschrieben wurde. Mittlerweile wissen wir das SOA in der ursprünglichen Form bereits veraltet ist. Das neue maßgeblich vom [Martin Fowler][martinfowler] entworfene Microservices-Ansatz ist die nächste Evolutionsstufe der Enterprise Architecture.
+BPM Ansatz spielt hervorragend mit der Serviceorientierten Architektur (SOA) als Enterprise-SOA zusammen wie im Artikel der computerwoche vor über 10 Jahren beschrieben wurde. Mittlerweile wissen wir dass SOA in der ursprünglichen Form bereits veraltet ist. Das neue maßgeblich vom [Martin Fowler][martinfowler] entworfene Microservices-Ansatz ist die nächste Evolutionsstufe der Enterprise Architecture.
 
 ## SOA vs. Microservices
->Sind Microservices keine SOA?   
+* `Sind Microservices keine SOA?`   
 
-SOA ist, genauso wie die Microservices, eine Antwort auf unwartbare komplexe monolithische IT. Im Vordergrund bei SOA steht die Beherrschung der Komplexität durch Strukturen.  Auch im Fokus ist die Optimierung der IT durch Eliminierung der Verschwendung mittels mehrfacher Problemlösungen. Jedes Problem soll unternehmensweit einmalig zentral gelöst werden. Die Lösung wird intern publiziert und es wird geachtet das diese wiederverwendet wird. 
-SOA setzt auf Wiederverwendung. Wiederverwendung von Services. Zentrales Domain Model. Enterprise Service Bus (ESB) als zentrale intelligente Integration verbindet die Services. Die gesamte Unternehmensarchitektur ist im Schichten Organisiert wie von Herrn Slama im [computerwoche] Artikel dargestellt:
+SOA ist, genauso wie die Microservices, eine Antwort auf unwartbare komplexe monolithische IT. Im Vordergrund bei SOA steht die Beherrschung der Komplexität durch Strukturen. Auch im Fokus ist die Optimierung der IT durch Eliminierung der Verschwendung mehrfacher Problemlösungen mittels Wiederverwendung. Jedes Problem soll unternehmensweit einmalig gelöst werden. Die Lösung wird intern publiziert und es wird geachtet dass diese wiederverwendet wird.  
+**SOA setzt auf die Wiederverwendung.** Wiederverwendung von Services die ein zentrales Domain Model nutzen ist in SOA massgeblich. Enterprise Service Bus (ESB) als zentrale intelligente Integration verbindet die Services. Die gesamte Unternehmensarchitektur ist im Schichten Organisiert wie von Herrn Slama im [computerwoche] Artikel dargestellt:
  
-![Enterprise SOA][soa][`Quelle  computerwoche Dirk Slama`][computerwoche]
+![Enterprise SOA][image_soa]
 
 
 BPMS als Zusatz übernimmt Teilweise die Serviceorchestrierung die gewöhnlich über ESB stattfindet. BPM kann damit als erweitertes SOA betrachtet werden.
@@ -82,6 +82,8 @@ o	Graphische Darstellung nach BPMN ausgehend von den Daten
 •	Prozessbewertung nach KPIs
 Die Optimierung geschieht in dem die durch BPM aufgezeigte Schwächen und Potentiale einfach in dem Änderungsprozess aufgenommen werden.
 
+![Enterprise Microservices][image_microservice]
+
 Der Prozessowner kann das neue SOLL Model im BPM System für den SOLL-IST vergleich aufnehmen.
 Die Entwicklung und Test können diesen Vergleich als Akzeptanzkriterium nutzen. Die Angleichung von IST und SOLL, soll auf Entwicklungs- und Testumgebung erfolgen. Produktiv sollten dann keine größeren Überraschungen erfolgen.
 Der Unterschied liegt darin das beim Reverse Engineering BPM das BPM System die Prozesse nachgelagert nach dem Ablauf ständig analysiert und falls vorhanden mit einem SOLL/PLAN Model vergleicht. BPM ist nicht führend bei der Prozesssteuerung sondern dafür sind die jeweiligen beteiligten Fachapplikationen allein zuständig.
@@ -96,9 +98,10 @@ Für die IT Architektur würde das bedeuten das die Implementierung der einzelne
 
 
 
-[computerwoche]:     https://www.computerwoche.de/a/soa-und-bpm-wachsen-zusammen,1219234 
-[soa]:               /images/posts/2017-09-17-BPM-und-Microservices/EnterpriseSOA_DirkSlama_20170508.jpg
-[martinfowler]:      https://martinfowler.com/
-[mattmclarty]:       https://www.infoworld.com/article/3080611/application-development/learning-from-soa-5-lessons-for-the-microservices-era.html
-[conway]:            https://de.wikipedia.org/wiki/Gesetz_von_Conway
-[scs]:               http://scs-architecture.org/
+[computerwoche]:         https://www.computerwoche.de/a/soa-und-bpm-wachsen-zusammen,1219234 
+[image_soa]:             /images/posts/2018-01-07-BPM-und-Microservices/BPM_und_Microservices_AzmirAbdi_SOA.svg
+[image_microservice]:    /images/posts/2018-01-07-BPM-und-Microservices/BPM_und_Microservices_AzmirAbdi_Microservices.svg
+[martinfowler]:          https://martinfowler.com/
+[mattmclarty]:           https://www.infoworld.com/article/3080611/application-development/learning-from-soa-5-lessons-for-the-microservices-era.html
+[conway]:                https://de.wikipedia.org/wiki/Gesetz_von_Conway
+[scs]:                   http://scs-architecture.org/
