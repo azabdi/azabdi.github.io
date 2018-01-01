@@ -85,7 +85,7 @@ Unter der Vorgabe daß alle fachliche Prozessschritte an OI gemeldet werden soll
 Beim rBPM wird die Ausführung der Service und der Human Tasks durch jeweiliges Microservice, implementiert nach eigenen Teamvorgaben, umgesetzt. Falls der Microservice selbst eigenen internen Status über den langlaufenden Prozess verwalten muss spricht hier nichts dagegen eine eingebettete Business Process Engine wie zum Beispiel [camunda BPMN Engine][camundaBPM] einzusetzen.  
 
 Der Prozessowner kann das neue SOLL Model im BPM System für den SOLL-IST vergleich aufnehmen. Die Entwicklung und Test können diesen Vergleich als Akzeptanzkriterium nutzen. Die Angleichung von IST und SOLL, soll auf Entwicklungs- und Testumgebung erfolgen. Produktiv sollten dann keine größeren Überraschungen erfolgen.
-Der Unterschied liegt darin das beim Reverse Engineering BPM das BPM System die Prozesse nachgelagert nach dem Ablauf ständig analysiert und falls vorhanden mit einem SOLL/PLAN Model vergleicht. BPM ist nicht führend bei der Prozesssteuerung sondern dafür sind die jeweiligen beteiligten Fachapplikationen allein zuständig.
+Der Unterschied liegt darin das beim Reverse Engineering BPM das BPM System die Prozesse nachgelagert nach dem Ablauf ständig analysiert und falls vorhanden mit einem SOLL/PLAN Model vergleicht. BPM ist nicht führend bei der Prozesssteuerung sondern dafür sind die jeweiligen beteiligten Fachapplikationen allein zuständig. Damit steuert der rBPM nur indirekt das Prozessablauf.
 
 Für die IT Architektur würde das bedeuten das die Implementierung der einzelnen Prozessschritte/Tasks in den Microservices frei jedem Team überlassen werden kann, just nach der Empfehlung von [Martin Fowler][martinfowler]. Keine Vorgaben der Technologien. Freie Umsetzung der Optimierungen und freie Entwicklung.
 
@@ -106,7 +106,7 @@ Die BPM Prozessoptimierung beim rBPM geschieht in dem der Prozessowner als Teil 
 ### Nachteile vom rBPMS
 Wie der Microservices-Ansatz selbst büßt rBPMS gegenüber den klassischen BPMS wie alle dezentrale Systeme gegenüber den zentralen an der Eleganz und in der Handhabung.
 - Keine zentrale Taskliste für die Human-Tasks
-- Antriggern der Tests. Wie beim klassischen BPM wäre beim Reverse BPM die Auswertung der Testergebnissen der End-To-End Prozesse in einer Testumgebung innerhalb des BPM-Systems möglich. Lediglich die das antriggern der manuellen Tasks für Tests müsste über einen gesonderten Test-Trigger erfolgen.
+- Automatisierte Durchführung der Tests ist nicht ohne Erweiterungen möglich. Wie beim klassischen BPM wäre beim Reverse BPM die Auswertung der Testergebnissen der End-To-End Prozesse in einer Testumgebung innerhalb des rBPMS möglich. Das Antriggern der Start-Events und der Human-Tasks für Tests müsste über einen gesonderten Test-Trigger erfolgen.
 
 -----------------------------------------------------------------------
 [computerwoche]:         	  https://www.computerwoche.de/a/soa-und-bpm-wachsen-zusammen,1219234
