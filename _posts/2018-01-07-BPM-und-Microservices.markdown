@@ -72,59 +72,43 @@ Genauso wie die Staaten erkannt haben das die zentrale Planung noble Ziele verfo
 BPM kann unterstützen wenn die Prozesstrasparenz aufgrund der Komplexität und der Unternehmensgröße leidet. BPM soll die Prozesse sichtbar machen und die Optimierungspotentiale im Sinne der Unternehmensziele aufdecken.
 
 ## Reverse BPM (rBPM)
-Das hier als **Reverse BPM (rBPM)** genannte BPM versucht die beschriebenen Anforderungen des Microservices-Ansatzes einzuhalten. rBPM verfolgt weiterhin die gleichen Ziele wie BPM in dem die Unternehmensprozesse analysiert, erfasst, gesteuert, überwacht und optimiert werden. Der Unterschied liegt in der Prozesssteuerung. Wie der Name *Reverse BPM* besagt, wird die Idee des Reverse-Engineerings angewandt, indem die Prozessabläufe mittels *[Operational Intelligence][operational_intelligence]* rekonstruirt werden.
+Das hier als **Reverse BPM (rBPM)** genannte BPM versucht die beschriebenen Eigenschaftenn des Microservices-Ansatzes einzuhalten. rBPM verfolgt weiterhin die gleichen Ziele wie BPM in dem die Unternehmensprozesse analysiert, erfasst, gesteuert, überwacht und optimiert werden. Der Unterschied liegt in der Prozesssteuerung. Wie der Name *Reverse BPM* besagt, wird die Idee des Reverse-Engineerings angewandt, indem die Prozessabläufe mittels *[Operational Intelligence][operational_intelligence]* rekonstruirt werden.
 
 ### Prozessanalyse, -Erfassung und Überwachung
-Mit Operational Intelligence (OI) wird die Prozesstransparenz gewonnen in dam die Daten aus der Verarbeitung (Operations) gesammelt und zu der Informationen interpretiert (Intelligence) werden. Das Vorgehen ist vergleichbar zum Business Intelligence (BI) jedoch unterscheidet sich in Dauer der Bereitstellung der Informationen. Im Gegenteil zu BI, wobei Informationen im Form der Reports frühestens am Folgetag, gewöhnlich aber nach Monats-, Quartal- oder Jahresabschluss berichtet werden, ermöglicht die OI die Gewinnung der Transparenz über die Geschäftsprozesse in nahezu Echtzeit.
+Mit Operational Intelligence (OI) wird die Prozesstransparenz gewonnen in dam die Daten aus der Verarbeitung (Operations) gesammelt und zu der Informationen interpretiert (Intelligence) werden. Das Vorgehen ist vergleichbar zum Business Intelligence (BI) jedoch unterscheidet es sich in der Geschwindigkeit der Bereitstellung der Informationen. Im Gegenteil zu BI, wobei Informationen im Form der Reports frühestens am Folgetag, gewöhnlich aber nach Monats-, Quartal- oder Jahresabschluss berichtet werden, ermöglicht die OI die Gewinnung der Transparenz über die Geschäftsprozesse in nahezu Echtzeit.
 
-Die operative IT Systeme sollen die fachliche Events an OI melden. Und das nicht einmal, sondern ständig, für jede Prozessinstanz. Für welches Prozess wird gerade was gemacht und für welche Prozess-Instanz in welcher Version. Ein Reverse-BPM-System (rBPMS) soll diese explizit gesammelte OI Prozessinformatinen ständig auswerten. Das System soll im Stande sein ein Prozessablauf vollständig nachkonstruieren und diesen auch nach BPM-Notation (BPMN) darstellen zu können. Unter der Vorgabe daß alle fachliche Prozessschritte an OI gemeldet werden sollen, wäre damit die Prozessanalyse und -Erfassung teilautomatisierbar. Die erfasste Abläufe würden in allen Fällen immer das IST-Zustand abbilden. Neue erfasste noch unbekannte Abläufe können dem Prozessowner zur Review gemeldet werden. Er könnte diese quittieren oder durch einen Change Request (CR) korrigieren lassen.
+Die operative IT Systeme sollen die fachliche Events an OI melden. Und das nicht einmal, sondern ständig, für jede Prozessinstanz. Für welches Prozess wird gerade was gemacht und für welche Prozess-Instanz in welcher Version? Ein Reverse-BPM-System (rBPMS) soll diese explizit gesammelte OI Prozessinformatinen ständig auswerten. Das System soll im Stande sein ein Prozessablauf vollständig nachkonstruieren und diesen auch nach *Business Process Modelling Notation* (BPMN) darstellen zu können.
 
-### Prozesssteuerung
-Beim rBPM wird die Steuerung der Service und der Human Tasks durch jeweiliges Microservice, implementiert nach eigenen Teamvorgaben, umgesetzt. Falls der Microservice selbst eigenen internen Status über den langlaufenden Prozess verwalten muss spricht hier nichts dagegen eine eingebettete Business Process Engine wie zum Beispiel [camunda BPMN Engine][camundaBPM] einzusetzen.  
+Unter der Vorgabe daß alle fachliche Prozessschritte an OI gemeldet werden sollen, wäre damit die Prozessanalyse und -Erfassung teilautomatisierbar. Die erfasste Abläufe würden in allen Fällen immer das IST-Zustand abbilden. Neue erfasste noch unbekannte Abläufe könnten dem Prozessowner zur Review gemeldet werden. Er könnte diese quittieren oder durch einen *Change Request* (CR) korrigieren lassen.
+
+### Prozesssteuerung und -ausführung
+Beim rBPM wird die Ausführung der Service und der Human Tasks durch jeweiliges Microservice, implementiert nach eigenen Teamvorgaben, umgesetzt. Falls der Microservice selbst eigenen internen Status über den langlaufenden Prozess verwalten muss spricht hier nichts dagegen eine eingebettete Business Process Engine wie zum Beispiel [camunda BPMN Engine][camundaBPM] einzusetzen.  
+
+Der Prozessowner kann das neue SOLL Model im BPM System für den SOLL-IST vergleich aufnehmen. Die Entwicklung und Test können diesen Vergleich als Akzeptanzkriterium nutzen. Die Angleichung von IST und SOLL, soll auf Entwicklungs- und Testumgebung erfolgen. Produktiv sollten dann keine größeren Überraschungen erfolgen.
+Der Unterschied liegt darin das beim Reverse Engineering BPM das BPM System die Prozesse nachgelagert nach dem Ablauf ständig analysiert und falls vorhanden mit einem SOLL/PLAN Model vergleicht. BPM ist nicht führend bei der Prozesssteuerung sondern dafür sind die jeweiligen beteiligten Fachapplikationen allein zuständig.
+
+Für die IT Architektur würde das bedeuten das die Implementierung der einzelnen Prozessschritte/Tasks in den Microservices frei jedem Team überlassen werden kann, just nach der Empfehlung von [Martin Fowler][martinfowler]. Keine Vorgaben der Technologien. Freie Umsetzung der Optimierungen und freie Entwicklung.
 
 ### Prozessoptimierung
-Die BPM Prozessoptimierung beim rBPM geschieht in dem der Prozessowner als Teil von BPM auf die Echtzeit Prozessanalyse reagiert und beim Änderungsbedarf einen CR stellt.  
 Beim Klassischen BPM erzeugt der Prozess Owner einen SOLL-Prozessmodell der durch Aufnahme in dem BPMS zum IST wird. Der BPMS steuert die Ausführung der Prozessinstanzen nach dem IST-Modell.
-Dagegen beim rBPM erstellt der Prozess Owner die CRs für die jeweiligen SOLL-Prozesssegmente der zugehörigen Microservices-Domänen. Die Microservice-Teams implementieren die CRs nach eigener Vorstellung. Sie implementieren auch die Event-Generierung für die OI. Dadurch ist der ablaufendes Prozesses     
 
-
-
-
-Schritte (Tasks) die in der manueller BPM Analyse-Phase (IST Erfassung) geschehen sollen, sollten automatisiert werden.
-BPM Reverse Engineering
-Genauso wie [Operational Intelligence] nur an BPM angewandt soll BPM nicht mit die IT steuern, sondern die Informationen sammeln und reagieren. Es ist nicht tragisch wen kurzfristig Prozesse nicht vollkommen nach dem zentralen Plan laufen. Oft ist der Plan einfach nicht vollständig. Dadurch daß die IT auf Veränderung ausgelegt ist lässt sich diese IST-SOLL Diskrepanz schnell beseitigen.
-*	IT Datenquellen und fachliche Events erzeugen
-	*	Eventuell. Daten aus Big-Data Speichern
-*	Mit Operational Intelligent in fast Echtzeit Prozessinformationen generieren
-*	BPM Reverse Engineering aus Prozessinformationen Prozessmodel nach BPMN generieren
-*	Mit der Streaming Technologie in fast Echtzeit sowohl Prozessinformationen als auch Modeldarstellung live darstellen
-*	Bei der SOLL-IST Abweichungen sollen fachliche Benachrichtigungen erzeugt werden können
-Folgende Antworten soll BPM Reverse Engineering geben:
-*	Welche Prozesse existieren im Unternehmen
-*	Wie laufen diese ab
-*
-*	Graphische Darstellung nach BPMN ausgehend von den Daten
-*	Die gesamte Statistik über die Prozesse
-*	Prozessbewertung nach KPIs
-Die Optimierung geschieht in dem die durch BPM aufgezeigte Schwächen und Potentiale einfach in dem Änderungsprozess aufgenommen werden.
+Die BPM Prozessoptimierung beim rBPM geschieht in dem der Prozessowner als Teil von BPM auf die Echtzeit Prozessanalyse reagiert und beim Änderungsbedarf einen CR stellt. Der Prozess Owner stellt die CRs für die jeweiligen SOLL-Prozesssegmente der zugehörigen Microservices-Domänen. Die Microservice-Teams implementieren die CRs nach eigener Vorstellung.  
 
 ![Enterprise Microservices mit BPM][image_microservices&BPM]  
 `Abbildung 2. Reverse BPM beim Microservices Ansatz`
 
-Der Prozessowner kann das neue SOLL Model im BPM System für den SOLL-IST vergleich aufnehmen.
-Die Entwicklung und Test können diesen Vergleich als Akzeptanzkriterium nutzen. Die Angleichung von IST und SOLL, soll auf Entwicklungs- und Testumgebung erfolgen. Produktiv sollten dann keine größeren Überraschungen erfolgen.
-Der Unterschied liegt darin das beim Reverse Engineering BPM das BPM System die Prozesse nachgelagert nach dem Ablauf ständig analysiert und falls vorhanden mit einem SOLL/PLAN Model vergleicht. BPM ist nicht führend bei der Prozesssteuerung sondern dafür sind die jeweiligen beteiligten Fachapplikationen allein zuständig.
-
-Wie beim klassischen BPM wäre beim Reverse BPM die Auswertung der Testergebnissen der End-To-End Prozesse in einer Testumgebung innerhalb des BPM-Systems möglich. Lediglich die das antriggern der manuellen Tasks für Tests müsste über einen gesonderten Test-Trigger erfolgen.
-
-Für die IT Architektur würde das bedeuten das die Implementierung der einzelnen Prozessschritte/Tasks in den Microservices frei jedem Team überlassen werden kann, just nach der Empfehlung von [Martin Fowler][martinfowler}. Keine Vorgaben der Technologien. Freie Umsetzung der Optimierungen und freie Entwicklung der ... tbd
+### Vorteile vom rBPMS
+- Einfache Einführung in die existierende IT-Landschaft
+- Keine Performance-Einbüße da die operative Systeme die Events asynchron verschicken können
+- Klare Anwendung für BPMN als Prozessmodelierungsnotation und Trennung von der Ausführung
 
 
+### Nachteile vom rBPMS
+Wie der Microservices-Ansatz selbst büßt rBPMS gegenüber den klassischen BPMS wie alle dezentrale Systeme gegenüber den zentralen an der Eleganz und in der Handhabung.
+- Keine zentrale Taskliste für die Human-Tasks
+- Antriggern der Tests. Wie beim klassischen BPM wäre beim Reverse BPM die Auswertung der Testergebnissen der End-To-End Prozesse in einer Testumgebung innerhalb des BPM-Systems möglich. Lediglich die das antriggern der manuellen Tasks für Tests müsste über einen gesonderten Test-Trigger erfolgen.
 
-
-
-
-
+-----------------------------------------------------------------------
 [computerwoche]:         	  https://www.computerwoche.de/a/soa-und-bpm-wachsen-zusammen,1219234
 [image_soa]:             	  /images/posts/2018-01-07-BPM-und-Microservices/BPM_und_Microservices_AzmirAbdi_SOA.svg
 [image_microservices]:    	/images/posts/2018-01-07-BPM-und-Microservices/BPM_und_Microservices_AzmirAbdi_Microservices.svg
