@@ -9,7 +9,7 @@ published: 	false
 ---
 Steht klassisches Business Process Management (BPM) im Wiederspruch zu der IT-Architektur nach dem Microservices-Ansatz? Der korrekte Microservices-Ansatz erlaubt keine zentrale unternehmensweite Prozesssteuerungskomponente!  
 
-Dieser Post schildert wie eine korrekte Implementierung vom BPM Systemen nach Microservices-Ansatz aussehen müsste. Um darauf eingehen zu können wird im ersten Teil auf die Begriffe BPM, SOA und Microservices, deren jeweiligen Motivation, sowie die Unterschiede zwischen SOA und Microservice eingegangen. Im zweiten Teil wird das auf Microcerices-Ansatz angewandte, leicht angepasste BPM als ***rBPM*** präsentiert.   
+Dieser Post schildert wie eine korrekte Implementierung vom BPM Systemen nach Microservices-Ansatz aussehen müsste. Um darauf eingehen zu können wird im ersten Teil auf die Begriffe BPM, SOA und Microservices, deren jeweiligen Motivation, sowie die Unterschiede zwischen SOA und Microservice eingegangen. Im zweiten Teil wird das auf Microservices-Ansatz angewandte, leicht angepasste BPM als ***rBPM*** präsentiert.   
 
 ## BPM, SOA und Microcerices
 Business Process Management (BPM) ist ein vollumfänglicher Ansatz der Unternehmensorganisation konzentriert auf die kontinuierliche Optimierung und damit auf die Gewinnmaximierung des Kerngeschäfts. Dabei wird das Kerngeschäft in die End-To-End Geschäftsprozess(e) gegliedert, die komplette Eigenleistung von dem Kunden-Auftrag bis zu der abschließenden Kunden-Lieferung umfassen.  
@@ -74,7 +74,7 @@ Genauso wie die Staaten erkannt haben das die zentrale Planung noble Ziele verfo
 BPM kann unterstützen wenn die Prozesstrasparenz aufgrund der Komplexität und der Unternehmensgröße leidet. BPM soll die Prozesse sichtbar machen und die Optimierungspotentiale im Sinne der Unternehmensziele aufdecken.
 
 ## Reverse BPM (rBPM)
-Das hier als **Reverse BPM (rBPM)** genannte BPM versucht die beschriebenen Eigenschaftenn des Microservices-Ansatzes einzuhalten. rBPM verfolgt weiterhin die gleichen Ziele wie BPM in dem die Unternehmensprozesse analysiert, erfasst, gesteuert, überwacht und optimiert werden. Der Unterschied liegt in der Prozesssteuerung. Wie der Name *Reverse BPM* besagt, wird die Idee des Reverse-Engineerings angewandt, indem die Prozessabläufe mittels *[Operational Intelligence][operational_intelligence]* rekonstruirt werden.
+Das hier als **Reverse BPM (rBPM)** genannte BPM versucht die beschriebenen Eigenschaftenn des Microservices-Ansatzes einzuhalten. rBPM verfolgt weiterhin die gleichen Ziele wie BPM in dem die Unternehmensprozesse analysiert, erfasst, gesteuert, überwacht und optimiert werden. Der Unterschied liegt in der Prozesssteuerung. Wie der Name *Reverse BPM* besagt, wird die Idee des Reverse-Engineerings angewandt, indem die Prozessabläufe mittels *[Operational Intelligence][operational_intelligence]* rekonstruiert werden.
 
 ### Prozessanalyse, -Erfassung und Überwachung
 Mit Operational Intelligence (OI) wird die Prozesstransparenz gewonnen in dam die Daten aus der Verarbeitung (Operations) gesammelt und zu der Informationen interpretiert (Intelligence) werden. Das Vorgehen ist vergleichbar zum Business Intelligence (BI) jedoch unterscheidet es sich in der Geschwindigkeit der Bereitstellung der Informationen. Im Gegenteil zu BI, wobei Informationen im Form der Reports frühestens am Folgetag, gewöhnlich aber nach Monats-, Quartal- oder Jahresabschluss berichtet werden, ermöglicht die OI die Gewinnung der Transparenz über die Geschäftsprozesse in nahezu Echtzeit.
@@ -96,21 +96,27 @@ Beim Klassischen BPM erzeugt der Prozess Owner einen SOLL-Prozessmodell der durc
 
 Die BPM Prozessoptimierung beim rBPM geschieht in dem der Prozessowner als Teil von BPM auf die Echtzeit Prozessanalyse reagiert und beim Änderungsbedarf einen CR stellt. Der Prozess Owner stellt die CRs für die jeweiligen SOLL-Prozesssegmente der zugehörigen Microservices-Domänen. Die Microservice-Teams implementieren die CRs nach eigener Vorstellung.  
 
+### rBPM Architektur
+Die End-To-End Geschäftsprozesse durchlaufen operativ mehrere fachlichen Domäne im Unternehmen. Nach Conway sollten daher diese nicht in einem operativen System implementiert werden.
+
+> BPMS nicht als operative sondern als unterstützende Querschnitt-Domäne implementieren.
+
+Durch die Überlassung der Task-Ausführung der eigenen Domänen können diese die Entkapselung als das Hauptziel des Microservices-Ansatzes einhalten.
+
 ![Enterprise Microservices mit BPM][image_microservices&BPM]  
-`Abbildung 3. Reverse BPM beim Microservices Ansatz`
+`Abbildung 3. BPM als Reverse BPM (rBPM) nach Microservices-Ansatz`
 
-### Vorteile vom rBPMS
-- Einfache Einführung in die existierende IT-Landschaft
-- Keine Performance-Einbüße da die operative Systeme die Events asynchron verschicken können
-- Klare Anwendung für BPMN als Prozessmodelierungsnotation und Trennung von der Ausführung
+Die *Operational Intelligence* des rBPM's muss alle notwendige Daten für die vollständigen Rekonstruktion des Prozessablaufes erhalten. Um die Entkapselung der operativen Systeme zu gewähren müsste dies asynchron erfolgen.
 
+## Fazit
+Es können weitere Vorteile vom der nach rBPM implementierten BPM-Systems, zusätzlich zu Architektur Kompatibilität zum Microservices-Ansatz, aufgelistet werden. Als zuerst spricht die einfache Einführung in die existierende IT-Landschaft dazu. Dadurch daß ein rBPMS die Prozessausführung nicht direkt steuert, müsste diese aus der bestehenden operativen Systemen nicht herausgelöst und nach BPMS migriert werden. Ein rBPMS müsste als IT-Anwendung der eigenen unterstützenden Querschnitt-Domäne abgekapselt von dem operativen Domänen agieren. Dadurch entstehen keine Performance-Einbüße da die operative Systeme die Events asynchron verschicken können.
 
-### Nachteile vom rBPMS
-Wie der Microservices-Ansatz selbst büßt rBPMS gegenüber den klassischen BPMS wie alle dezentrale Systeme gegenüber den zentralen an der Eleganz und in der Handhabung.
-- Keine zentrale Taskliste für die Human-Tasks
-- Automatisierte Durchführung der Tests ist nicht ohne Erweiterungen möglich. Wie beim klassischen BPM wäre beim Reverse BPM die Auswertung der Testergebnissen der End-To-End Prozesse in einer Testumgebung innerhalb des rBPMS möglich. Das Antriggern der Start-Events und der Human-Tasks für Tests müsste über einen gesonderten Test-Trigger erfolgen.
+Wie der Microservices-Ansatz selbst büßt rBPMS gegenüber den klassischen BPMS wie alle dezentrale Systeme gegenüber den zentralen an der Eleganz und in der Handhabung. So wäre keine unternehmensweite zentrale Taskliste für die Human-Tasks mehr vorhanden. Die Prozesstransparenz wäre nur dann vorhanden wenn die Informationen hierfür korrekt eingesammelt wurden. Die Gefahr das wichtige fachliche Schritte von dem operativen Systemen nicht gemeldet wurde immer vorhanden sein.
 
------------------------------------------------------------------------
+Beim testen wäre die automatisierte Durchführung der Tests nicht ohne Erweiterungen möglich. Wie beim klassischen BPM wäre beim Reverse BPM die Auswertung der Testergebnissen der End-To-End Prozesse in einer Testumgebung innerhalb des rBPMS umsetzbar. Das Ausführen der Start-Events und der Human-Tasks für Tests müsste gesondert erfolgen.
+
+Unter dem Strich könnte man mit rBPM ein weiterhin vollumfängliches Business Process Management mit allen Vorteilen das es mitbringt, auch in der neuen agile IT der Microservices, erhalten.
+
 [computerwoche]:         	  https://www.computerwoche.de/a/soa-und-bpm-wachsen-zusammen,1219234
 [image_soa]:             	  /images/posts/2018-01-07-BPM-und-Microservices/BPM_und_Microservices_AzmirAbdi_SOA.svg
 [image_microservices]:    	/images/posts/2018-01-07-BPM-und-Microservices/BPM_und_Microservices_AzmirAbdi_Microservices.svg
