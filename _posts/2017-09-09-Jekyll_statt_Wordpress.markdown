@@ -1,10 +1,10 @@
 ---
-layout: 	post
-title:  	"Jekyll statt Wordpress"
-date:   	2017-09-09 14:45:12
-duration:	5
-categories: [Blog]
-tags: 		[Blog, Wordpress, Jekyll, Staticman]
+layout: 	   post
+title:  	   "Jekyll statt Wordpress"
+date:   	   2017-09-09 14:45:12
+duration:	   3
+categories:  [Blog]
+tags: 		   [Blog, Wordpress, Jekyll, Staticman]
 ---
 
 `Am Anfang war die Idee … und weil die Idee so "innovativ" war, fand sie im Cyberspace ihre Schöpfung.`
