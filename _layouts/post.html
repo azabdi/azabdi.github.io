@@ -6,11 +6,11 @@ layout: default
     <div class="post-meta">
       <time datetime="{{ page.date | date: "%-d %b %Y" }}" class="post-meta__date date">{{ page.date | date: "%-d %b %Y" }}</time>
       {% if page.tags.size > 0 %}
-      &#8226; <span class="post-meta__tags">{% for tag in page.tags %}| <a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }} </a>{% endfor %}|</span>
+      <span class="post-meta__tags">{% for tag in page.tags %}| <a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }} </a>{% endfor %}|</span>
       {% endif %}
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
-	<span>von <a href="/about/">{{ site.author.name }}</a> | Lesezeit {{ page.duration }} Minuten</span><br/><br/><br/>
+	  <span><i class="fa fa-user-o"></i> <a href="/about/">{{ site.author.name }}</a> | <i class="fa fa-clock-o"></i> {{ page.duration }} Min.</span><br/><br/><br/>
   </header>
 
   <section class="post">

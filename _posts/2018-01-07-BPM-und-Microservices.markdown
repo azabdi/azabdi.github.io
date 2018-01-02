@@ -9,14 +9,16 @@ published: 	false
 ---
 Steht klassisches Business Process Management (BPM) im Wiederspruch zu der IT-Architektur nach dem Microservices-Ansatz? Der korrekte Microservices-Ansatz erlaubt keine zentrale unternehmensweite Prozesssteuerungskomponente!  
 
-## BPM und SOA
+Dieser Post schildert wie eine korrekte Implementierung vom BPM Systemen nach Microservices-Ansatz aussehen müsste. Um darauf eingehen zu können wird im ersten Teil auf die Begriffe BPM, SOA und Microservices, deren jeweiligen Motivation, sowie die Unterschiede zwischen SOA und Microservice eingegangen. Im zweiten Teil wird das auf Microcerices-Ansatz angewandte, leicht angepasste BPM als ***rBPM*** präsentiert.   
+
+## BPM, SOA und Microcerices
 Business Process Management (BPM) ist ein vollumfänglicher Ansatz der Unternehmensorganisation konzentriert auf die kontinuierliche Optimierung und damit auf die Gewinnmaximierung des Kerngeschäfts. Dabei wird das Kerngeschäft in die End-To-End Geschäftsprozess(e) gegliedert, die komplette Eigenleistung von dem Kunden-Auftrag bis zu der abschließenden Kunden-Lieferung umfassen.  
 
 Die IT gestützte Lösung des BPM’s sind die BPM-Systeme (BPMS) bei denen die End-To-End Geschäftsprozesse durch integrierte zentrale Business Process Engines (BPE) automatisiert gesteuert werden.  
 
 BPM Ansatz spielt hervorragend mit der Serviceorientierten Architektur (SOA) als Enterprise-SOA zusammen wie im Artikel der [computerwoche] vom Herrn Slama vor über 10 Jahren beschrieben wurde. Mittlerweile wissen wir daß SOA in der ursprünglichen Form bereits veraltet ist. Das neue maßgeblich vom [Martin Fowler][martinfowler] entworfene Microservices-Ansatz ist die nächste Evolutionsstufe der Enterprise Architecture.
 
-## SOA vs. Microservices
+### SOA vs. Microservices
 * `Sind Microservices keine SOA?`   
 
 SOA ist, genauso wie die Microservices, eine Antwort auf unwartbare komplexe monolithische IT. Bei SOA steht im Vordergrund die Beherrschung der Komplexität durch Strukturen. Auch im Fokus ist die Optimierung der IT durch Eliminierung der Verschwendung durch mehrfach implementierten Problemlösungen mit Hilfe der Wiederverwendung. Jedes Problem soll unternehmensweit einmalig gelöst werden. Die Lösung wird intern publiziert und es wird geachtet daß diese wiederverwendet wird.  
@@ -95,7 +97,7 @@ Beim Klassischen BPM erzeugt der Prozess Owner einen SOLL-Prozessmodell der durc
 Die BPM Prozessoptimierung beim rBPM geschieht in dem der Prozessowner als Teil von BPM auf die Echtzeit Prozessanalyse reagiert und beim Änderungsbedarf einen CR stellt. Der Prozess Owner stellt die CRs für die jeweiligen SOLL-Prozesssegmente der zugehörigen Microservices-Domänen. Die Microservice-Teams implementieren die CRs nach eigener Vorstellung.  
 
 ![Enterprise Microservices mit BPM][image_microservices&BPM]  
-`Abbildung 2. Reverse BPM beim Microservices Ansatz`
+`Abbildung 3. Reverse BPM beim Microservices Ansatz`
 
 ### Vorteile vom rBPMS
 - Einfache Einführung in die existierende IT-Landschaft
