@@ -2,7 +2,7 @@
 layout: 	  post
 title:  	  "BPM und Microservices"
 date:   	  2018-01-07 10:57:08
-duration:	  10
+duration:	  15
 categories: [BPM]
 tags: 		  [BPM, Microservices, Enterprise Architecture, SOA, Reverse BPM, BPM Reverse Engineering]
 published: 	false
@@ -62,10 +62,9 @@ In diesem Artikel geht es primär um BPM. Wo bleibt BPM in dieser neuen agilen W
 
 > BPM soll sich auch an Conway orientieren
 
-BPM besagt daß die End-To-End Prozesse in einem Unternehmen analysiert, erfasst, gesteuert, überwacht und optimiert werden. Die Unternehmen die dies IT gesteuert umsetzen werden nach ISO-9000 oder nach CMMI auf dem höchstem Level zertifiziert. Wie die Umsetzung aussehen soll ist es frei überlassen, dennoch besagt die BPM Lehre das die Prozesssteuerung aus einem BPMS System erfolgen soll.
+BPM besagt daß die End-To-End Prozesse in einem Unternehmen analysiert, erfasst, gesteuert, überwacht und optimiert werden. Die Unternehmen die dies IT gesteuert umsetzen werden nach ISO-9000 oder nach CMMI auf dem höchstem Level zertifiziert. Wie die Umsetzung aussehen soll ist es frei überlassen, dennoch besagt die BPM Lehre das die Prozesssteuerung aus einem BPM-System erfolgen soll.
 
-Diese Forderung des BPM's nach einer zentralen Steuerung soll der Forderung nach einer zentralen automatisierten Prozessauswertung weichen.
-Wie gesagt, dem Management reicht es in regelmäßigen Abständen die Ergebnisse zu berichten. BPM soll die Umsetzung der Prozessdigitalisierung frei stellen.
+Diese Forderung des BPM's nach einer zentralen Steuerung soll der Forderung nach einer zentralen automatisierten Prozessauswertung weichen. Wie gesagt, dem Management reicht es in regelmäßigen Abständen die Ergebnisse zu berichten. BPM soll die Umsetzung der Prozessdigitalisierung frei stellen.
 
 Genauso wie die Staaten erkannt haben das die zentrale Planung noble Ziele verfolgt, in der Umsetzung aber niemals gegenüber der freien Wirtschaft ankommen kann. So müssen auch die IT Strukturen in SOA Konzernen freier werden.
 
