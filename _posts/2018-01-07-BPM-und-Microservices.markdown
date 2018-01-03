@@ -100,12 +100,12 @@ Die End-To-End Geschäftsprozesse durchlaufen operativ mehrere fachlichen Domän
 
 > BPMS nicht als operative sondern als unterstützende Querschnitt-Domäne implementieren.
 
-Durch die Überlassung der Task-Ausführung der eigenen Domänen können diese die Entkapselung als das Hauptziel des Microservices-Ansatzes einhalten.
+Durch die Überlassung der Task-Ausführung der eigenen Domänen können diese die Entkoppelung als das Hauptziel des Microservices-Ansatzes einhalten.
 
 ![Enterprise Microservices mit BPM][image_microservices&BPM]  
 `Abbildung 3. BPM als Reverse BPM (rBPM) nach Microservices-Ansatz`
 
-Die *Operational Intelligence* des rBPM muss alle notwendigen Daten für die vollständigen Rekonstruktion des Prozessablaufes erhalten. Um die Entkapselung der operativen Systeme zu gewähren, müsste dies asynchron erfolgen.
+Die *Operational Intelligence* des rBPM muss alle notwendigen Daten für die vollständigen Rekonstruktion des Prozessablaufes erhalten. Um die Entkoppelung der operativen Systeme zu gewähren, müsste dies asynchron erfolgen.
 
 ## Fazit
 Es können weitere Vorteile des nach rBPM implementierten BPM-Systems, zusätzlich zu Architektur Kompatibilität zum Microservices-Ansatz, aufgelistet werden. Als erstes spricht die einfache Einführung in die existierende IT-Landschaft dafür. Dadurch, dass ein rBPMS die Prozessausführung nicht direkt steuert, müsste diese aus der bestehenden operativen Systemen nicht herausgelöst und nach BPMS migriert werden. Ein rBPMS müsste als IT-Anwendung der eigenen unterstützenden Querschnitt-Domäne abgekapselt von dem operativen Domänen agieren. Dadurch entstehen keine Performance-Einbußen da die operativen Systeme die Events asynchron verschicken können.
