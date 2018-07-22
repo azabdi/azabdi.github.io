@@ -1,7 +1,7 @@
 ---
 layout: 	  post
 title:  	  "Die Ordnung über den Haufen werfen?"
-date:   	  2018-07-22 17:57:08
+date:   	  2018-07-22 10:57:08
 duration:	  15
 categories: [BPM]
 tags: 		  [BPM, Microservices, Enterprise Architecture, SOA, Reverse BPM, BPM Reverse Engineering]
