@@ -7,7 +7,7 @@ categories: [BPM]
 tags: 		  [BPM, Microservices, Enterprise Architecture, SOA, Reverse BPM, BPM Reverse Engineering]
 published: 	true
 ---
-`[Artikel erschienen auch in Business Technology Magazin 2.2018][btm]`
+***[Artikel erschienen auch in Business Technology Magazin 2.2018][btm]***
 
 
 Steht klassisches Business Process Management (BPM) im Widerspruch zur IT-Architektur nach dem Microservices-Ansatz? Der korrekte Microservices-Ansatz erlaubt immerhin keine zentrale unternehmensweite Prozesssteuerungskomponente.
@@ -126,4 +126,4 @@ Letztendlich könnte man mit rBPM ein weiterhin vollumfängliches Business Proce
 [microservices_ewolff]:		  https://www.dpunkt.de/buecher/12181/9783864903137-microservices.html
 [operational_intelligence]:	https://en.wikipedia.org/wiki/Operational_intelligence
 [camundaBPM]:				        https://camunda.com/products/bpmn-engine/
-[btm]                        https://jaxenter.de/ausgaben/business-technology-2-18
+[btm]:                       https://jaxenter.de/ausgaben/business-technology-2-18
