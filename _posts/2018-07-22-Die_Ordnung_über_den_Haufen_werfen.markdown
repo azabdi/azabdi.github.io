@@ -116,7 +116,7 @@ Letztendlich könnte man mit rBPM ein weiterhin vollumfängliches Business Proce
 
 [enterpriseSOA_slama]:      https://www.computerwoche.de/a/soa-und-bpm-wachsen-zusammen,1219234
 [image1_soa]:             	  /images/posts/2018-07-22-Die_Ordnung_über_den_Haufen_werfen/BPM_und_Microservices_AzmirAbdi_SOA.svg
-[image2_microservices]:    	/images/posts//BPM_und_Microservices_AzmirAbdi_Microservices.svg
+[image2_microservices]:    	/images/posts/2018-07-22-Die_Ordnung_über_den_Haufen_werfen/BPM_und_Microservices_AzmirAbdi_Microservices.svg
 [image3_microservices&bpm]:	/images/posts/2018-07-22-Die_Ordnung_über_den_Haufen_werfen/BPM_und_Microservices_AzmirAbdi_Microservices&BPM.svg
 [microservices_fowler]: 	  https://martinfowler.com/articles/microservices.html
 [learnFromSoa_mclarty]:           	  https://www.infoworld.com/article/3080611/application-development/learning-from-soa-5-lessons-for-the-microservices-era.html
