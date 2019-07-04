@@ -18,5 +18,5 @@ Die Seite des Vortrags findet ihr hinter der folgenden Adresse:
 
 ![image]  
 
-[image]:   /images/posts/2018-11-28-Vortrag_ueber_Reverse_BPM/Vortrag_ueber_Reverse_BPM.jpg
+[image]:   /images/posts/2018-11-28-Vortrag_ueber_Reverse_BPM/Vortrag_ueber_Reverse_BPM.png
 [innovative-trends]:  https://innovative-trends.de/2018/11/26/orchestrierung-von-micro-services-it-architektur-experte-abdi-von-sidion-an-der-hft/
