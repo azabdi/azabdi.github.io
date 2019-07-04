@@ -22,8 +22,9 @@ Als Softwarearchitekt liegt jedoch mein Fokus mehr auf die Architektur der Test 
 
 Das ganze gehe ich auf dem Beispiel am Cucumber-Framework für die Java-Programmiersprache an.
 Die Seite des Vortrags findet ich hinter folgende Linkt Adresse:
-[https://www.sasec.de/agenda/vortraege/articles/mi52-testen-im-vorgehensmittelpunkt-mit-bdd-sasec.html]
+[https://www.sasec.de/agenda/vortraege/articles/mi52-testen-im-vorgehensmittelpunkt-mit-bdd-sasec.html][sasec]
 
 ![image]  
 
 [image]:   /images/posts/2019-07-02_Vortrag_ueber_BDD_mit_Cucumber/Vortrag_ueber_BDD_mit_Cucumber.jpg
+[sasec]:   https://www.sasec.de/agenda/vortraege/articles/mi52-testen-im-vorgehensmittelpunkt-mit-bdd-sasec.html
