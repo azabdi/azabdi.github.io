@@ -2,7 +2,7 @@
 layout: 	   post
 title:  	   "Vortrag über BDD mit Cucumber"
 date:   	   2019-07-02 20:56:04
-duration:	   3
+duration:	   1
 categories:  [Blog]
 tags: 		   [BDD, Behaviour Driven Development, Cucumber, Agile Testing, Integration Tests]
 ---
@@ -24,6 +24,6 @@ Das ganze gehe ich auf dem Beispiel am Cucumber-Framework für die Java-Programm
 Die Seite des Vortrags findet ich hinter folgende Linkt Adresse:
 [https://www.sasec.de/agenda/vortraege/articles/mi52-testen-im-vorgehensmittelpunkt-mit-bdd-sasec.html]
 
-[image]  
+![image]  
 
 [image]:   /images/posts/2019-07-02_Vortrag_ueber_BDD_mit_Cucumber/Vortrag_ueber_BDD_mit_Cucumber.jpg
