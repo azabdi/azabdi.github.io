@@ -21,7 +21,8 @@ Als Softwarearchitekt liegt jedoch mein Fokus mehr auf die Architektur der Test 
 * Setze ich auf die Wiederverwendung und wenn ja, wobei?
 
 Das ganze gehe ich auf dem Beispiel am Cucumber-Framework für die Java-Programmiersprache an.
-Die Seite des Vortrags findet ich hinter folgende Linkt Adresse:
+
+Die Seite des Vortrags findet ihr hinter der folgenden Adresse:
 [https://www.sasec.de/agenda/vortraege/articles/mi52-testen-im-vorgehensmittelpunkt-mit-bdd-sasec.html][sasec]
 
 ![image]  
