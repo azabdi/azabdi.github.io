@@ -9,7 +9,7 @@ tags: 		   [Coding Patterns]
 
 `rc1 Pattern`
 
-Optimist vs. Pessimist. Ein optimistisch veranlagter Softwareentwickler (es soll so was anscheinend auch geben) geht von dem *goodwill-case* aus und implementiert zum Beispiel ein statusbehafteter Prozess mit dem erfolgreichem Status als initialen Wert.
+Ein optimistisch veranlagter Softwareentwickler (es soll so was anscheinend auch geben) geht von dem *goodwill-case* aus und implementiert zum Beispiel ein statusbehafteter Prozess mit dem erfolgreichem Status als initialen Wert.
 Bsp:
 ```
 class MyProcess {
