@@ -1,8 +1,8 @@
 ---
 layout: 	   post
-title:  	   "rc1 Pattern"
+title:  	   "rc1 Pattern - Optmist vs. Pessimist"
 date:   	   2019-08-14 06:44:54
-duration:	   1
+duration:	   3
 categories:    [Blog]
 tags: 		   [Coding Patterns]
 ---
