@@ -35,6 +35,15 @@ Ein rigoroses Vorgehen ich weiß, letztendlich aber sehr sparsamm - in großen P
 Im Linux Skripten initiert man an dem Skript Anfang eine return code (rc) Variable mit dem Wert 1 das für den Fehler steht.
 Das Skript wird mit `exit rc` beendet. Dazwischen findet die Verarbeitung statt und bei einer Erfolgreichen Verarbeitung wird die Variable auf 0 gesetzt.
 Damit ist es sichergestellt dass in dem Fall - und nir dann - mit einem OK die Verarbeitung quitirt wird.
-
+```
+rc = 1 #initiate return code with error
+...
+do this
+change that
+commit something else
+rc = 0 #set to success
+...
+exit rc #exit ith return code
+```
 Daher finde ich *rc1* als ein Name dem man sich für dieses Verhalten sehr einfach einprägen kann und hoffe dass auch ein Optimist dies einsehen kann.
 
