@@ -1,9 +1,9 @@
 ---
 layout: 	   post
 title:  	   "rc1 Pattern"
-date:   	   2019-08-14 11:44:54
+date:   	   2019-08-14 09:44:54
 duration:	   1
-categories:  [Blog]
+categories:    [Blog]
 tags: 		   [Coding Patterns]
 ---
 
