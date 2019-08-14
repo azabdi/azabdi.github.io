@@ -43,7 +43,7 @@ change that
 commit something else
 rc = 0 #set to success
 ...
-exit rc #exit ith return code
+exit rc #exit with return code
 ```
 Daher finde ich *rc1* als ein Name dem man sich für dieses Verhalten sehr einfach einprägen kann und hoffe dass auch ein Optimist dies einsehen kann.
 
