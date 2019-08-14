@@ -20,7 +20,7 @@ class MyProcess {
 Ich glaube zu meinen, dass er sich dabei folgendes denkt: `Ich spare mir das im 99,99% der Fällen notwendiges explizites Setzen diesen Zustandes in dem ich es einfach damit initiere.
 Falls der Zustand anders gesetzt werden soll - kein Problem, dann mache ich es eben.` - so weit, so gut.
 
-Doch dann, eines schönen Tages (der Optimist ist schon längst weitergezogen) beschäftigen sich ein Paar Datenanalysten mit einigen Anomalien - mehrere Wochen lang. Ein paar Monate später vermutet man doch ein Fehler in der Implementierung - so wird ein Analyse Ticket eröffnet mit dem Hinweis dass da wohl was an der Transaktionalität der Anwendung falsch sein müsste. Diese behauptet, dass der Prozess erfolgreich verarbeitet wurde, die Datenanalyse jedoch eindeutig beweist dass dies nicht immer der Fall ist.
+Doch dann, eines schönen Tages (der Optimist ist schon längst weitergezogen) beschäftigen sich ein paar Datenanalysten mit einigen Anomalien - mehrere Wochen lang. Ein paar Monate später vermutet man doch ein Fehler in der Implementierung - so wird ein Analyse Ticket eröffnet mit dem Hinweis dass da wohl was an der Transaktionalität der Anwendung falsch sein müsste. Diese behauptet, dass der Prozess erfolgreich verarbeitet wurde, die Datenanalyse jedoch eindeutig beweist dass dies nicht immer der Fall ist.
 
 Die mehrtägige Codeanalyse entblößt endlich das Märchen bei dem ein unerwarteter Ereignis die Verarbeitung stoppte und dabei nicht implizit den Status der Verarbeitung auf Fehler setzte.
 Es steht fest, der 99,99% Ersparnis des Optimisten hat Kosten in dem höheren vierstelligen Bereich verursacht.
