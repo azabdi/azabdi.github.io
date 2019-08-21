@@ -4,17 +4,17 @@ name: Max
 email: ''
 address: ''
 message: Hallo Azmir.
-nur eine kleine Anmerkung, in Linux Skripten wird oft so verfahren, das ist wahr.
-
-Die Aussage "der Rückgabewert `1` steht für Fehler" ist allerdings etwas ungenau. Vielmehr sind alle Werte ungleich `0` ein Zeichen für einen Fehler bei der Ausführung oder Verarbeitung.
-
-Every command returns an exit status (sometimes referred to as a return status or exit code). 
-A successful command returns a 0, while an unsuccessful one returns a non-zero value that usually can be interpreted as an error code`(https://www.tldp.org/LDP/abs/html/exit-status.html)
-
-Bessere Skripte vergeben daher unterschiedliche Status-Codes für unterschiedliche Fehler, nicht (nur) den generischen Fehlercode `1`.
-
-Da einige Rückgabewerte allerdings auch z.B. von der Shell verwendet/gesetzt werden (z.B. wenn das Programm nicht gefunden wird), sollte man darauf achten, [eindeutige, nicht reservierte Fehlercodes](http://tldp.org/LDP/abs/html/exitcodes.html) in den eigenen Skripten zu verwenden.
-
-VG Max
+  nur eine kleine Anmerkung, in Linux Skripten wird oft so verfahren, das ist wahr.
+  
+  Die Aussage "der Rückgabewert `1` steht für Fehler" ist allerdings etwas ungenau. Vielmehr sind alle Werte ungleich `0` ein Zeichen für einen Fehler bei der Ausführung oder Verarbeitung.
+  
+  Every command returns an exit status (sometimes referred to as a return status or exit code). 
+  A successful command returns a 0, while an unsuccessful one returns a non-zero value that usually can be interpreted as an error code`(https://www.tldp.org/LDP/abs/html/exit-status.html)
+  
+  Bessere Skripte vergeben daher unterschiedliche Status-Codes für unterschiedliche Fehler, nicht (nur) den generischen Fehlercode `1`.
+  
+  Da einige Rückgabewerte allerdings auch z.B. von der Shell verwendet/gesetzt werden (z.B. wenn das Programm nicht gefunden wird), sollte man darauf achten, [eindeutige, nicht reservierte Fehlercodes](http://tldp.org/LDP/abs/html/exitcodes.html) in den eigenen Skripten zu verwenden.
+  
+  VG Max
 date: 1566298226
 timestamp: 1566298226
