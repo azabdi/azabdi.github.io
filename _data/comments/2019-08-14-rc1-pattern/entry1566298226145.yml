@@ -3,7 +3,7 @@ _parent: 2019-08-14-rc1-pattern
 name: Max
 email: ''
 address: ''
-message: Hallo Azmir.
+message: Hallo Azmir,
   nur eine kleine Anmerkung, in Linux Skripten wird oft so verfahren, das ist wahr.
   
   Die Aussage "der Rückgabewert `1` steht für Fehler" ist allerdings etwas ungenau. Vielmehr sind alle Werte ungleich `0` ein Zeichen für einen Fehler bei der Ausführung oder Verarbeitung.
