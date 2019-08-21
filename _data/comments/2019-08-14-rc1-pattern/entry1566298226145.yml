@@ -4,9 +4,9 @@ name: Max
 email: ''
 address: ''
 message: Hallo Azmir.
-nur eine kleine Anmerkung: in Linux Skripten wird oft so verfahren, das ist wahr.
+nur eine kleine Anmerkung, in Linux Skripten wird oft so verfahren, das ist wahr.
 
-Die Aussage "der Rückgabewert `1` steht für Fehler" ist allerdings etwas ungenau. Vielmehr sind alle Werte ungleich `0` ein Zeichen für einen Fehler bei der Ausführung oder Verarbeitung:
+Die Aussage "der Rückgabewert `1` steht für Fehler" ist allerdings etwas ungenau. Vielmehr sind alle Werte ungleich `0` ein Zeichen für einen Fehler bei der Ausführung oder Verarbeitung.
 
 Every command returns an exit status (sometimes referred to as a return status or exit code). 
 A successful command returns a 0, while an unsuccessful one returns a non-zero value that usually can be interpreted as an error code`(https://www.tldp.org/LDP/abs/html/exit-status.html)
